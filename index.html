@@ -2,9 +2,60 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5, user-scalable=no">
   <title>марте с 8 марта</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /*  Добавляем статический макет и увеличиваем масштаб */
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 18px; /* Увеличиваем базовый размер шрифта для удобства чтения */
+    }
+
+    .intro-screen, .congrats-screen, .memories-screen {
+      width: 100%;
+      min-height: 100vh; /* Минимальная высота - высота экрана */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box; /* Важно, чтобы padding не увеличивал ширину элемента */
+    }
+
+    .congrats-screen .nav-btn { /*  Сделаем кнопку далее более заметной */
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 20px;
+    }
+
+    .nav-btn {  /* Общие стили для кнопок навигации */
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    /* Добавим стили для лучшего отображения на маленьких экранах */
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px; /* Немного уменьшаем шрифт на маленьких экранах */
+      }
+
+      .intro-screen h1 {
+        font-size: 2.5em;
+      }
+
+      .intro-screen h2 {
+        font-size: 1.2em;
+      }
+    }
+
+    #petals-container {
+      position: fixed; /* Важно для правильного отображения лепестков */
+    }
+  </style>
 </head>
 <body>
 <div class="stars"></div>
