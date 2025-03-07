@@ -192,7 +192,7 @@ const mediaData = [
     {
         type: 'image',
         src: 'images/photo2.jpg',
-        comment: 'а тут мы вместе встречали новый год'
+        comment: 'мы вместе встречали новый год'
     },
     {
         type: 'image',
@@ -207,7 +207,7 @@ const mediaData = [
     {
         type: 'image',
         src: 'images/photo5.jpg',
-        comment: 'а тут обычный день проведенный с тобой'
+        comment: 'обычный день проведенный с тобой'
     },
     {
         type: 'image',
