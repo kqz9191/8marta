@@ -197,7 +197,7 @@ const mediaData = [
     {
         type: 'image',
         src: 'images/photo3.jpg',
-        comment: 'ну а эта дата так для красоты'
+        comment: 'а тут твои первые сообщения'
     },
      {
         type: 'image',
